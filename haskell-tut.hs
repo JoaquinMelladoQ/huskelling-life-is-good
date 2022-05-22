@@ -40,7 +40,11 @@ minNum = minimum primeNums
 -- y is the initial accumlator, whitch has to be 0
 recTotalSum x y = if x == 0 then y else recTotalSum (x - 1) (x + y)
 
-
+-- list recursively
+-- create a list from x and added recursively
+-- where is a alias to encapsulate x - 1
+-- input 10 [], output: [0..9]
+createList x y = if x == 0 then y else createList (z) ((z):y) where z = x - 1
 
 
 
