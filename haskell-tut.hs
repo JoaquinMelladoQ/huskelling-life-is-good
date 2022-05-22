@@ -11,7 +11,7 @@ negNumEx = 5 + (-4)
 num9 = 9 :: Int
 sqrtOf9 = sqrt ( fromIntegral num9 )
 
--- concat
+-- concat every piece of shit
 primeNums = [200, 3, 4, 6002, 12]
 morePrimes = primeNums ++ [50, 9, 4000]
 
@@ -35,8 +35,10 @@ maxNum = maximum primeNums
 minNum = minimum primeNums
 
 
-
-
+-- tail call opt: recursive without piling in a stack. 
+-- Calculating a sums from 0 to x
+-- y is the initial accumlator, whitch has to be 0
+recTotalSum x y = if x == 0 then y else recTotalSum (x - 1) (x + y)
 
 
 
